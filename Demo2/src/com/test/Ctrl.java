@@ -24,7 +24,8 @@ public class Ctrl extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		 String json = "{code:11,msg:'返回成功'}";
+		 String json = "{code:11,msg:'唱跳rap 篮球 MUSIC'}";
+		 //唱跳rap 篮球 MUSIC
 		 response.getWriter().print(json);
 		 response.getWriter().flush();
 		 response.getWriter().close();
