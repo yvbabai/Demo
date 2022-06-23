@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript"  src="jquery-3.6.0.min.js" ></script>
+
+<script type="text/javascript">
+function btnAction()        { 
+	
+	  $.ajax({
+	        type: "POST",
+	        dataType: "json",
+	        url: "/Demo2/Ctrl",
+	        data: "sss",
+	        success: function(data){
+	        	console.log(data.code);
+
+	        },
+	        error: function(msg){
+
+	        }
+
+	    }); 
+	
+}
+
+
+
+/* $("#submit").bind("click",function(){
+	
+	alert("开始ajax");
+	
+     $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "http://39.108.142.245:8080/Demo2/Ctrl",
+        data: "sss",
+        success: function(data){
+        	alert(data);
+
+        },
+        error: function(msg){
+
+        }
+
+    }); 
+}); */
+
+
+</script>
+
+</head>
+<body>
+<!-- 
+<input type="button" id="submit"value="雀食点一波  jq"/> -->
+<!--  -->
+<!-- <form action="http://39.108.142.245:8080/Demo2/Ctrl"> -->
+<button type="submit" id="btn_submit" onclick="btnAction()" > 雀食点一波 </button>
+
+<!-- <button id="submit">雀食点一波  jq</button> -->
+<!-- </form> -->
+
+</body>
+</html>
